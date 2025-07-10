@@ -1,3 +1,11 @@
+/*
+File: skuGenerator.gs
+Author: Masato Nobunaga
+Date: 06-04-2025
+Description: Generates a unique SKU for items in a google sheet
+Flow: Duplicate receipt template -> extract info from product order -> write details into order receipt -> print order receipt as a pdf
+*/
+
 var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 var generatedSKUs = new Set();
 
